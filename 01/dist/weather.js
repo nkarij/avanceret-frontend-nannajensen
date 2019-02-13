@@ -19,6 +19,7 @@ fetch(apiDatabaseURL + weatherLocation + apiKeyId)
 
     let currentWeather = weather.weather[0].main;
     getWeatherInfo(currentWeather);
+    matchWeatherAndImage();
 
     function getWeatherInfo(weather){
         console.log(weather);
@@ -29,6 +30,7 @@ fetch(apiDatabaseURL + weatherLocation + apiKeyId)
     function matchWeatherAndImage(){
         if(currentWeather == "Clouds"){
             //  her skal jeg lave noget kode som kan indsætte korrekt billede
+            getWeatherPicture(Clouds);
             console.log("hej");
         }
     }
@@ -36,23 +38,9 @@ fetch(apiDatabaseURL + weatherLocation + apiKeyId)
 
     let weatherImageElement = document.querySelector(".weather-image");
 
-    let  = function getWeatherPicture(){
-        for (var key in arguments[0]) {
-            let listItem = document.createElement("li");
-            listItem.classList.add("slide");
-            let link = document.createElement("a");
-            // tlføj evt class på link. 
-            let image = document.createElement("img");
-            image.classList.add("slide__image");
-            slideshowContainer.insertAdjacentElement("beforeend", listItem);
-            listItem.insertAdjacentElement("afterbegin", link);
-            link.insertAdjacentElement("afterbegin", image);
-            image.setAttribute("src", imageFolder[key]);
-            // okay, her tager vi lige den hurtige løsning:
-            
-        }
-    }(imageFolder);
-
- 
+    let  = function getWeatherPicture(keystring){
+        weatherImageElement.setAttribute("src", imageFolder[keystring]);
+        weatherImageElement.src
+    }(weatherChangeImageFolder);
 
 });
