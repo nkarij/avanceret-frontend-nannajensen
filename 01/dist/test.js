@@ -88,8 +88,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
         } 
         imageSlidesArray[slideIndex-1].style.display = "block";
 
-        // Change image every 3 seconds
-        setTimeout(autoSlides, 10000); 
+        // Change image every 4 seconds
+        setTimeout(autoSlides, 4000); 
     }
         
 })

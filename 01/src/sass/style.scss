@@ -12,6 +12,8 @@
 }
 
 body {
+    height: 100%;
+    width: 100%;
     margin: 0;
 }
 
@@ -216,9 +218,8 @@ MAIN NAVIGATION
     padding: 3rem 2rem;
     @include mediaQuery($maxwidth) {
         @media (max-width: $maxwidth) {
-            // grid-column-start: 1;
-            // grid-column-end: 2;
             padding: 0 2rem;
+            border: none;
         }
     }
 
@@ -231,8 +232,6 @@ MAIN NAVIGATION
     margin: 0;
     @include mediaQuery($maxwidth) {
         @media (max-width: $maxwidth) {
-            // grid-column-start: 1;
-            // grid-column-end: 2;
             padding: 1rem 0;
         }
       }
@@ -244,27 +243,10 @@ MAIN NAVIGATION
     @include font-face($article-text, $dark-grey, 500);    
 }
 
-/*---------------------------------------------------
-    WIDGET SECTION
-----------------------------------------------------*/
 
-// .widget-section{
-//     grid-column-start: 3;
-//     grid-column-end: 4;
-//     padding: 1rem 2rem;
-//     @include mediaQuery($maxwidth) {
-//         @media (max-width: $maxwidth) {
-//             grid-column-start: 1;
-//             grid-column-end: 2;
-//             padding: 2rem 2rem;
-//         }
-//     }
-// }
-
-
-/*
+/*-------------------------------------------
     REVIEWS 
-------------------------------*/
+---------------------------------------------*/
 
 // a tag
 .reviews {
@@ -274,8 +256,6 @@ MAIN NAVIGATION
     padding: 3rem 2rem;
     @include mediaQuery($maxwidth) {
         @media (max-width: $maxwidth) {
-            // grid-column-start: 1;
-            // grid-column-end: 2;
             padding: 2rem 2rem;
         }
     }
@@ -356,8 +336,6 @@ MAIN NAVIGATION
     padding: 1rem 2rem;
     @include mediaQuery($maxwidth) {
         @media (max-width: $maxwidth) {
-            // grid-column-start: 1;
-            // grid-column-end: 2;
             padding: 2rem 2rem;
         }
     }
@@ -519,8 +497,143 @@ CONTACT FORM INPUT
     border-color: initial;
 }
 
-/* ALL MARGINS
-------------------------------------*/
+
+/*---------------------------------------------------
+    FOOTER
+----------------------------------------------------*/
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $theme-color;
+    padding: 6rem 2rem;
+    @include mediaQuery($maxwidth) {
+        @media (max-width: $maxwidth) {
+            flex-direction: column-reverse;
+        }
+    }
+}
+.subscribe {
+    @include mediaQuery($maxwidth) {
+        @media (max-width: $maxwidth) {
+            border-bottom: dotted 1px $silver;
+        }
+    }
+}
+
+.address {
+    font-style: normal;
+}
+
+.address, .subscribe__form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include mediaQuery($maxwidth) {
+        @media (max-width: $maxwidth) {
+            display: block;
+            margin: 2rem 0 2rem 0;
+        }
+    }
+}
+
+.address__telephone, .address__email {
+    text-decoration: none;
+}
+
+.address__heading, .subscribe__heading {
+    font-family: $headings;
+    @include font-face(3rem, $yellow, bold);
+    margin: 0;
+}
+
+.address__street, 
+.address__city, 
+.address__telephone, 
+.address__email {
+    font-family: $text;
+    @include font-face(3rem, $white-smoke, normal);
+    margin: 0;
+    @include mediaQuery($maxwidth) {
+        @media (max-width: $maxwidth) {
+            display: block;
+            margin: 1rem 0 1rem 0;
+        }
+    }
+}
+
+.subscribe__form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+// .subscribe-tagline,
+// .subscribe-email-input,
+// .subscribe-button {
+//     // margin-bottom: 2rem;
+// }
+
+.subscribe-tagline,
+.subscribe-email-input,
+.subscribe-button {
+    font-family: $text;
+    @include mediaQuery($maxwidth) {
+        @media (max-width: $maxwidth) {
+            display: block;
+            margin: 1rem 0 1rem 0;
+        }
+    }
+}
+
+.subscribe-tagline {
+    @include font-face(2rem, $white-smoke, normal);
+}
+
+.subscribe-email-input {
+    padding: 1rem;
+}
+
+.subscribe-email-input::placeholder {
+    padding-left: 1rem;
+}
+
+
+.subscribe-button {
+    padding: 1.5rem;    
+    border-width: 0;
+    background-color: $yellow;
+    color: $theme-color;
+    border: complement($yellow);
+    font-size: 1rem;
+}
+
+
+/**** SMALL ****/
+
+.small {
+    width: 100%;
+    height: 5vh;
+    @include font-face(2rem, $theme-color, normal);
+    text-align: center;
+}
+
+.small__link {
+    text-decoration: none;
+    color: $theme-color;
+}
+
+.small__link:hover {
+    background-color: $yellow;
+}
+
+
+
+
+
+
 
 
 
