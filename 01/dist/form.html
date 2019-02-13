@@ -32,96 +32,139 @@
 <!-- Main -->
     <main class="main">
 
-        <!-- heading section -->
-        <section class="headings">
-            <div class="menu-icon">
-                <img class="menu-icon__source" src="IMG/icons/Group 22@2x.png" alt="menu-icon">
-            </div>
-            <h2 class="article__heading">Overskrift</h2>
-        </section>
+        <!-- main grid -->
+        <div class="main-grid">
 
-       <!-- menu section -->
-       <section class="menus-section">
-            <div class="menu-icon">
-                <img class="menu-icon__source" src="IMG/icons/burger_2-512.png" alt="menu-icon">
-            </div>
-            <nav class="main-navigation">
-                <ul class="menulist">
-                    <li class="menupunkt">
-                        <a class="menupunkt__link" href="index.html" target="_blank">Home</a>
-                    </li>    
-                    <li class="menupunkt">
-                        <a class="menupunkt__link"href="index.html" target="_blank">Menu</a>
-                    </li>
-                    <li class="menupunkt">
-                        <a class="menupunkt__link" href="index.html" target="_blank">Menu</a>
-                    </li>
+            <!-- menu section -->
+            <section class="menus-section">
+                <div class="menu-icon">
+                    <img class="menu-icon__source" src="IMG/icons/burger_2-512.png" alt="menu-icon">
+                </div>
+                <nav class="main-navigation">
+                    <ul class="menulist">
+                        <li class="menupunkt">
+                            <a class="menupunkt__link" href="index.html" target="_blank">Home</a>
+                        </li>    
+                        <li class="menupunkt">
+                            <a class="menupunkt__link"href="index.html" target="_blank">Menu</a>
+                        </li>
+                        <li class="menupunkt">
+                            <a class="menupunkt__link" href="index.html" target="_blank">Menu</a>
+                        </li>
+        
+                        <li class="menupunkt">
+                            <a class="menupunkt__link" href="index.html" target="_blank">Menu</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
 
-                    <li class="menupunkt">
-                        <a class="menupunkt__link" href="index.html" target="_blank">Menu</a>
+
+            <!-- CONTACT FORM -->
+            <section class="contact-form-section">
+                    <h2 class="contact-form__heading">Overskrift</h2>
+                <form class="form">
+                    <label class="form__label" for="fornavn">Fornavn</label>
+                    <input type="text" 
+                    name="fornavn" 
+                    id="fornavn"
+                    class="form__input-style validate">
+                    
+                    <label class="form__label for="efternavn">Efternavn</label>
+                    <input type="text" 
+                    name="efternavn" 
+                    id="efternavn"
+                    class="form__input-style">
+
+                    <label class="form__label for="mail">e-mail</label>
+                    <input type="email" 
+                    name="mail" 
+                    id="mail"
+                    class="form__input-style">
+
+                    <label class="form__label for="tlf">Telefon</label>
+                    <input type="tel" 
+                    name="tlf" 
+                    id="tlf"
+                    class="form__input-style">
+
+                    <textarea name="comment" 
+                    placeholder="skriv til os her" 
+                    id="contact-form__comment"
+                    class="form__comment form__input-style"
+                    ></textarea>
+
+                    <button type="submit"
+                    id="booking-form-submit"
+                    class="form-submit-btn default-button-style"
+                    >Send</button>
+                </form>
+            </section>
+
+         <!-- RATING SECTION -->
+         <a class="reviews reviews--hide">
+                <ul class="review__list">
+                    <li class="commentator">
+                        <span class="commentator-avatar">
+                            <img class="commentator-avatar__source" src="IMG/avatar2.png" alt="Avatar 1">
+                        </span>
+                        <section class="textcomment">
+                            <h4 class="textcomment__name">Anna-Maria</h4>
+                            <p class="textcomment__text">Det er et perfekt sted at slutte en lang dag.</p>
+                        </section>
+                    </li>
+                    <li class="commentator">
+                        <span class="commentator-avatar">
+                            <img class="commentator-avatar__source" src="IMG/avatar2.png" alt="Avatar 1">
+                        </span>
+                        <section class="textcomment">
+                            <h4 class="textcomment__name">Anna-Maria</h4>
+                            <p class="textcomment__text">Det er et perfekt sted at slutte en lang dag.</p>
+                        </section>
+                    </li>
+                    <li class="commentator">
+                        <span class="commentator-avatar">
+                            <img class="commentator-avatar__source" src="IMG/avatar2.png" alt="Avatar 1">
+                        </span>
+                        <section class="textcomment">
+                            <h4 class="textcomment__name">Anna-Maria</h4>
+                            <p class="textcomment__text">Det er et perfekt sted at slutte en lang dag.</p>
+                        </section>
+                    </li>
+                    <li class="commentator">
+                        <span class="commentator-avatar">
+                            <img class="commentator-avatar__source" src="IMG/avatar2.png" alt="Avatar 1">
+                        </span>
+                        <section class="textcomment">
+                            <h4 class="textcomment__name">Anna-Maria</h4>
+                            <p class="textcomment__text">Det er et perfekt sted at slutte en lang dag.</p>
+                        </section>
                     </li>
                 </ul>
-            </nav>
-        </section>
+            </a>
 
-
-        <!-- CONTACT FORM -->
-        <section class="contact-form-section">
-            <form class="form">
-                <label class="form__label" for="fornavn">Fornavn</label>
-                <input type="text" 
-                name="fornavn" 
-                id="fornavn"
-                class="form__input-style validate">
-                
-                <label class="form__label for="efternavn">Efternavn</label>
-                <input type="text" 
-                name="efternavn" 
-                id="efternavn"
-                class="form__input-style">
-
-                <label class="form__label for="mail">e-mail</label>
-                <input type="email" 
-                name="mail" 
-                id="mail"
-                class="form__input-style">
-
-                <label class="form__label for="tlf">Telefon</label>
-                <input type="tel" 
-                name="tlf" 
-                id="tlf"
-                class="form__input-style">
-
-                <textarea name="comment" 
-                placeholder="skriv til os her" 
-                id="contact-form__comment"
-                class="form__comment form__input-style"
-                ></textarea>
-
-                <button type="submit"
-                id="booking-form-submit"
-                class="form-submit-btn default-button-font default-button-style"
-                >Send</button>
-            </form>
-        </section>
-        <aside class="widget-section">
-
-             <!-- RATING SECTION -->
-
-
-            <!-- facebook int -->
-            <div class="facebook">
+                <!-- facebook int -->
+            <div class="facebook facebook--hide">
                 <iframe id="fb-plugin" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=230&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=2055892001160880" width="230" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
             </div>
-        </aside>
+            <!-- </aside> -->
 
+            <a href="https://openweathermap.org/city/2618425" class="weather-section weather-section--hide">
+                <figure class="weather-image-container">
+                    <img src="" alt="" class="weather-image">
+                </figure>
+                <section class="forecast">
+                    <p class="forecast__temperatur">Temperatur: <span class="forecast__grader"></span> grader</p>                 
+                </section>
+            </a>
+        </div>
 
     </main>
 
     <script src="test.js"></script>
     <script src="menu.js"></script>
     <script src="form-valid.js"></script>
-    
+    <script src="weather.js"></script>    
     <!-- <script src="fetch.js"></script> -->
 </body>
 </html>

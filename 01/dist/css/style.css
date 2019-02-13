@@ -101,16 +101,7 @@ figure {
 ----------------------------------------------------*/
 .main {
   background-color: #FCFAE3;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  border: 1px solid #fcf8f8;
   padding: 3rem 0;
-}
-@media (max-width: 600px) and (max-width: 600px) {
-  .main {
-    grid-template-columns: 1fr;
-    padding: 0;
-  }
 }
 
 /* -------------------------------------------------
@@ -182,38 +173,19 @@ LOGO-SECTION
 }
 
 /*---------------------------------------------------
-    HEADINGS SECTION    
+    MAIN GRID    
 ----------------------------------------------------*/
-.headings {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  order: 1;
+.main-grid {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr auto;
+  padding: 2rem 0;
 }
 @media (max-width: 600px) and (max-width: 600px) {
-  .headings {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    order: 2;
-  }
-}
-
-.article__heading {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  font-family: "Quicksand", sans-serif;
-  font-size: 3rem;
-  color: #444751;
-  font-weight: bold;
-  margin: 0;
-  padding: 2rem 2rem;
-}
-@media (max-width: 600px) and (max-width: 600px) {
-  .article__heading {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    padding: 1rem 2rem;
+  .main-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
   }
 }
 
@@ -223,14 +195,10 @@ MAIN NAVIGATION
 .menus-section {
   grid-column-start: 1;
   grid-column-end: 2;
-  order: 2;
-  padding: 1rem 0;
+  padding: 3rem 0;
 }
 @media (max-width: 600px) and (max-width: 600px) {
   .menus-section {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    order: 1;
     padding: 2rem 2rem;
   }
 }
@@ -247,6 +215,7 @@ MAIN NAVIGATION
 @media (max-width: 600px) and (max-width: 600px) {
   .menu-icon {
     display: block;
+    order: 1;
   }
 }
 
@@ -260,9 +229,6 @@ MAIN NAVIGATION
 }
 @media (max-width: 600px) and (max-width: 600px) {
   .main-navigation {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    order: 2;
     padding: 0;
     display: none;
   }
@@ -274,8 +240,6 @@ MAIN NAVIGATION
 
 .menulist {
   text-align: center;
-  width: 100%;
-  height: 100%;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -285,6 +249,10 @@ MAIN NAVIGATION
   width: 100%;
   height: 100%;
   padding: 1rem 0;
+}
+
+.menupunkt:first-of-type {
+  padding: 0;
 }
 
 .menupunkt:hover {
@@ -312,18 +280,27 @@ MAIN NAVIGATION
 /*---------------------------------------------------
     BLOG SECTION
 ----------------------------------------------------*/
-.blog-section {
+.blog-section, .gallery-container, .contact-form-section {
   grid-column-start: 2;
   grid-column-end: 3;
-  order: 3;
-  padding: 1rem 2rem;
+  padding: 3rem 2rem;
 }
 @media (max-width: 600px) and (max-width: 600px) {
-  .blog-section {
-    grid-column-start: 1;
-    grid-column-end: 2;
+  .blog-section, .gallery-container, .contact-form-section {
     padding: 0 2rem;
-    order: 3;
+  }
+}
+
+.article__heading, .contact-form__heading {
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+  color: #444751;
+  font-weight: bold;
+  margin: 0;
+}
+@media (max-width: 600px) and (max-width: 600px) {
+  .article__heading, .contact-form__heading {
+    padding: 1rem 0;
   }
 }
 
@@ -338,28 +315,25 @@ MAIN NAVIGATION
 /*---------------------------------------------------
     WIDGET SECTION
 ----------------------------------------------------*/
-.widget-section {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  order: 4;
-  padding: 1rem 2rem;
-}
-@media (max-width: 600px) and (max-width: 600px) {
-  .widget-section {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    padding: 2rem 2rem;
-    order: 4;
-  }
-}
-
 /*
     REVIEWS 
 ------------------------------*/
 .reviews {
   display: block;
-  width: 100%;
-  height: 100%;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  padding: 3rem 2rem;
+}
+@media (max-width: 600px) and (max-width: 600px) {
+  .reviews {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 600px) and (max-width: 600px) {
+  .reviews--hide {
+    display: none;
+  }
 }
 
 .review__list {
@@ -419,25 +393,77 @@ MAIN NAVIGATION
     facebook plugin
 ------------------------------------*/
 .facebook {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  display: block;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
   text-align: center;
+  padding: 1rem 2rem;
+}
+@media (max-width: 600px) and (max-width: 600px) {
+  .facebook {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 600px) and (max-width: 600px) {
+  .facebook--hide {
+    display: none;
+  }
 }
 
 /*---------------------------------------------------
     weather section
 ----------------------------------------------------*/
 .weather-section {
+  display: block;
   grid-column-start: 1;
   grid-column-end: 2;
-  order: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem 2rem;
 }
 @media (max-width: 600px) and (max-width: 600px) {
   .weather-section {
-    grid-column-start: 1;
-    grid-column-end: 2;
     padding: 2rem 2rem;
   }
+}
+
+@media (max-width: 600px) and (max-width: 600px) {
+  .weather-section--hide {
+    display: none;
+  }
+}
+
+.weather-image-container {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.weather-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.forecast {
+  padding: 1rem 0;
+}
+
+.forecast__temperatur {
+  font-size: 2rem;
+  color: #2f3542;
+  font-weight: bold;
+}
+
+forecast__grader {
+  font-size: 2rem;
+  color: #2f3542;
+  font-weight: normal;
 }
 
 /*---------------------------------------------------
@@ -447,6 +473,12 @@ MAIN NAVIGATION
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
+}
+@media (max-width: 600px) and (max-width: 600px) {
+  .gallery-container {
+    display: block;
+    width: 100%;
+  }
 }
 
 .galleryimage-wrap {
@@ -464,12 +496,23 @@ MAIN NAVIGATION
 CONTACT FORM INPUT
 ----------------------------------------------------*/
 .contact-form-section {
-  padding: 4rem 3rem;
+  padding: 0 3rem;
+  padding-top: 3rem;
+}
+
+.contact-form__heading {
+  margin-bottom: 3rem;
 }
 
 .form {
   display: grid;
   grid-template-columns: 30% 70%;
+}
+@media (max-width: 850px) and (max-width: 850px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .form__label {
@@ -493,6 +536,12 @@ CONTACT FORM INPUT
   padding: 0.5rem;
   background-color: #2f3542;
   text-align: center;
+}
+@media (max-width: 850px) and (max-width: 850px) {
+  .default-button-style {
+    display: block;
+    width: 100%;
+  }
 }
 
 .form__comment {

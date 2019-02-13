@@ -32,46 +32,49 @@
 <!-- Main -->
     <main class="main">
 
-        <!-- heading section -->
-        <section class="headings">
-            <h2 class="article__heading">Overskrift</h2>
-        </section>
+        <!-- main grid -->
+        <div class="main-grid">
+                    <!-- heading section -->
 
-        <!-- menu section -->
-        <section class="menus-section">
-            <div class="menu-icon">
-                <img class="menu-icon__source" src="IMG/icons/burger_2-512.png" alt="menu-icon">
-            </div>
-            <nav class="main-navigation">
-                <ul class="menulist">
-                    <li class="menupunkt">
-                        <a class="menupunkt__link" href="index.html" target="_blank">Home</a>
-                    </li>    
-                    <li class="menupunkt">
-                        <a class="menupunkt__link"href="index.html" target="_blank">Menu</a>
-                    </li>
-                    <li class="menupunkt">
-                        <a class="menupunkt__link" href="index.html" target="_blank">Menu</a>
-                    </li>
-    
-                    <li class="menupunkt">
-                        <a class="menupunkt__link" href="index.html" target="_blank">Menu</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-
-        <article class="blog-section">
-            <section class="article">
-                <p class="article__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint soluta enim ducimus quibusdam ut laudantium veniam. Repellendus <strong>earum ipsam</strong>  aperiam? Cupiditate asperiores reprehenderit itaque, quae deserunt quasi ex laudantium nostrum.</p>
-                <p class="article__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint soluta enim ducimus quibusdam ut laudantium veniam. Repellendus earum ipsam aperiam? <strong>Cupiditate</strong>  asperiores reprehenderit itaque, quae deserunt quasi ex laudantium nostrum.</p>
-                <p class="article__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint soluta enim ducimus quibusdam ut laudantium veniam. Repellendus earum ipsam aperiam? Cupiditate asperiores reprehenderit itaque, quae deserunt quasi ex laudantium nostrum.</p>
+            <!-- menu section -->
+            <section class="menus-section">
+                    <!-- <section class="headings">
+                            <h2 class="article__heading">Overskrift</h2>
+                        </section> -->
+                <div class="menu-icon">
+                    <img class="menu-icon__source" src="IMG/icons/burger_2-512.png" alt="menu-icon">
+                </div>
+                <nav class="main-navigation">
+                    <ul class="menulist">
+                        <li class="menupunkt">
+                            <a class="menupunkt__link" href="index.html" target="_blank">Home</a>
+                        </li>    
+                        <li class="menupunkt">
+                            <a class="menupunkt__link"href="index.html" target="_blank">Menu</a>
+                        </li>
+                        <li class="menupunkt">
+                            <a class="menupunkt__link" href="index.html" target="_blank">Menu</a>
+                        </li>
+        
+                        <li class="menupunkt">
+                            <a class="menupunkt__link" href="index.html" target="_blank">Menu</a>
+                        </li>
+                    </ul>
+                </nav>
             </section>
-        </article>
 
-        <aside class="widget-section">
+            <article class="blog-section">
+                <section class="article">
+                    <h2 class="article__heading">Overskrift</h2>
+                    <p class="article__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint soluta enim ducimus quibusdam ut laudantium veniam. Repellendus <strong>earum ipsam</strong>  aperiam? Cupiditate asperiores reprehenderit itaque, quae deserunt quasi ex laudantium nostrum.</p>
+                    <p class="article__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint soluta enim ducimus quibusdam ut laudantium veniam. Repellendus earum ipsam aperiam? <strong>Cupiditate</strong>  asperiores reprehenderit itaque, quae deserunt quasi ex laudantium nostrum.</p>
+                    <p class="article__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint soluta enim ducimus quibusdam ut laudantium veniam. Repellendus earum ipsam aperiam? Cupiditate asperiores reprehenderit itaque, quae deserunt quasi ex laudantium nostrum.</p>
+                </section>
+            </article>
 
-             <!-- RATING SECTION -->
+            <!-- <aside class="widget-section"> -->
+
+                <!-- RATING SECTION -->
             <a class="reviews">
                 <ul class="review__list">
                     <li class="commentator">
@@ -113,22 +116,31 @@
                 </ul>
             </a>
 
-            <!-- facebook int -->
+                <!-- facebook int -->
             <div class="facebook">
                 <iframe id="fb-plugin" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=230&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=2055892001160880" width="230" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
             </div>
-        </aside>
+            <!-- </aside> -->
 
-        <section class="weather-section">
-            <figure class="weather-image-container">
-                <img src="" alt="" class="weather-image">
-            </figure>
+            <a href="https://openweathermap.org/city/2618425" class="weather-section">
+                <figure class="weather-image-container">
+                    <img src="" alt="" class="weather-image">
+                </figure>
+                <section class="forecast">
+                    <p class="forecast__temperatur">Temperatur: <span class="forecast__grader"></span> grader</p>                 
+                </section>
+            </a>
 
-
-        </section>
-
+        </div>
 
     </main>
+
+    <footer class="footer">
+
+
+    </footer>
+
+
 
     <script src="test.js"></script>
     <script src="menu.js"></script>
