@@ -7,21 +7,19 @@
     margin: 0;
 }
 
-/* SHORTCUTS TO FIT WIDTH & HEIGHTS
---------------------------------------------------*/ 
 
 @mixin fit-parent(){
     width: 100%;
     height: 100%;
 }
 
-// images
+
 @mixin fit-image($objectfit){
     @include fit-parent();
     object-fit: $objectfit;
 }
 
-// margin 
+
 @mixin margin-auto {
     margin: { 
         left: auto;
@@ -32,10 +30,6 @@
 
 
 
-
-/* DEVICE SPECIFIC STYLES
---------------------------------------------------*/
-
 @mixin mediaQuery($maxwidth) {
     @media (max-width: $maxwidth) {
       @content;
@@ -43,8 +37,3 @@
     }
   }
 
-//   SÅDAN HER SKAL mediaQuery SKRIVES IND I STYLE DEKLARATIONEN
-// de 600px kan med fordel byttes ud med en variabel
-// @include mediaQuery(600px){
-//     width: 100%; - kan være hvilken som helst property
-// }

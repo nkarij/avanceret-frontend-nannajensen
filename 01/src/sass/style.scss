@@ -11,10 +11,11 @@
     box-sizing: border-box;    
 }
 
+
+
 body {
     height: 100%;
     width: 100%;
-    margin: 0;
 }
 
 figure {
@@ -31,7 +32,6 @@ figure {
 .main {
     background-color: $base-color;
     padding: 3rem 0;
-
 }
 
 /* -------------------------------------------------
@@ -628,6 +628,8 @@ CONTACT FORM INPUT
 .small__link:hover {
     background-color: $yellow;
 }
+
+
 
 
 
