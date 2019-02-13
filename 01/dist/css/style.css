@@ -1,0 +1,507 @@
+/* -------------------------------------------------
+    VARIABLER
+----------------------------------------------------*/
+/* PAGE COLORS
+------------------------------------*/
+/* -------------------------------------------------
+    VARIABLER
+----------------------------------------------------*/
+/* PAGE COLORS
+------------------------------------*/
+/* HTML REFERENCE FONT
+------------------------------------*/
+html {
+  font-size: 10px;
+  /* all other referring fonts in rem */
+}
+
+/* -------------------------------------------------
+    VARIABLER
+----------------------------------------------------*/
+/* -------------------------------------------------
+    MIXINS
+----------------------------------------------------*/
+/* FONT BASICS
+------------------------------------*/
+/* LINKS
+------------------------------------*/
+/* FA FA ICONS
+------------------------------------*/
+/* horisontal alignment on parent */
+.icon-parent {
+  display: block;
+  /*needs to be a block/inline-block element */
+  line-height: 2rem;
+  /*needs to be same line-height as height */
+  text-align: center;
+}
+
+/* vertical alignment on child */
+.icon-align-v {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* SHORTCUTS TO FIT WIDTH & HEIGHTS
+--------------------------------------------------*/
+/* DEVICE SPECIFIC STYLES
+--------------------------------------------------*/
+/* HTML REFERENCE FONT
+------------------------------------*/
+html {
+  font-size: 10px;
+  /* all other referring fonts in rem */
+}
+
+/* -------------------------------------------------
+    VARIABLER
+----------------------------------------------------*/
+/* -------------------------------------------------
+    MIXINS
+----------------------------------------------------*/
+/* FONT BASICS
+------------------------------------*/
+/* LINKS
+------------------------------------*/
+/* FA FA ICONS
+------------------------------------*/
+/* horisontal alignment on parent */
+.icon-parent {
+  display: block;
+  /*needs to be a block/inline-block element */
+  line-height: 2rem;
+  /*needs to be same line-height as height */
+  text-align: center;
+}
+
+/* vertical alignment on child */
+.icon-align-v {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* -------------------------------------------------
+    RESET
+----------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------------------------------------
+    FRONTPAGE
+----------------------------------------------------*/
+.main {
+  background-color: #FCFAE3;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  border: 1px solid #fcf8f8;
+  padding: 3rem 0;
+}
+@media (max-width: 600px) and (max-width: 600px) {
+  .main {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}
+
+/* -------------------------------------------------
+    HEADER
+----------------------------------------------------*/
+.header {
+  background-color: #2f3542;
+  position: relative;
+  padding: 8px;
+  justify-self: center;
+}
+
+/* Slideshow*/
+.slideshow {
+  width: 100%;
+  height: 70vh;
+  padding: 0;
+  margin: 0;
+}
+
+.slide {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.slide__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.radiobuttons {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%);
+}
+
+/*---------------------------------------------------
+LOGO-SECTION
+----------------------------------------------------*/
+.logo-section {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #2f3542;
+  height: auto;
+  width: 100%;
+  padding: 1rem 5rem;
+}
+@media (max-width: 600px) and (max-width: 600px) {
+  .logo-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.logo-section__name {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4rem;
+  color: #feda6a;
+  font-weight: bold;
+}
+
+.logo-image__source {
+  display: block;
+}
+
+/*---------------------------------------------------
+    HEADINGS SECTION    
+----------------------------------------------------*/
+.headings {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  order: 1;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+@media (max-width: 600px) and (max-width: 600px) {
+  .headings {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    order: 2;
+  }
+}
+
+.article__heading {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+  color: #444751;
+  font-weight: bold;
+  margin: 0;
+  padding: 2rem 2rem;
+}
+@media (max-width: 600px) and (max-width: 600px) {
+  .article__heading {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 1rem 2rem;
+  }
+}
+
+/*---------------------------------------------------
+MAIN NAVIGATION
+----------------------------------------------------*/
+.menus-section {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  order: 2;
+  padding: 1rem 0;
+}
+@media (max-width: 600px) and (max-width: 600px) {
+  .menus-section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    order: 1;
+    padding: 2rem 2rem;
+  }
+}
+
+.menus-section--colorchange {
+  background-color: #feda6a;
+}
+
+.menu-icon {
+  display: none;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+@media (max-width: 600px) and (max-width: 600px) {
+  .menu-icon {
+    display: block;
+  }
+}
+
+.menu-icon__source {
+  width: 8vh;
+  height: 8vh;
+}
+
+.main-navigation {
+  display: block;
+}
+@media (max-width: 600px) and (max-width: 600px) {
+  .main-navigation {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    order: 2;
+    padding: 0;
+    display: none;
+  }
+}
+
+.main-navigation--show {
+  display: block;
+}
+
+.menulist {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menupunkt {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
+}
+
+.menupunkt:hover {
+  background-color: #2f3542;
+}
+
+.menupunkt__link {
+  display: block;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  font-size: 3rem;
+  color: #444751;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  text-decoration-line: none;
+}
+.menupunkt__link:hover {
+  text-decoration-line: none;
+  font-weight: bold;
+  background-color: #2f3542;
+  color: #feda6a;
+}
+
+/*---------------------------------------------------
+    BLOG SECTION
+----------------------------------------------------*/
+.blog-section {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  order: 3;
+  padding: 1rem 2rem;
+}
+@media (max-width: 600px) and (max-width: 600px) {
+  .blog-section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 0 2rem;
+    order: 3;
+  }
+}
+
+.article__text {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: #444751;
+  font-weight: 500;
+}
+
+/*---------------------------------------------------
+    WIDGET SECTION
+----------------------------------------------------*/
+.widget-section {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  order: 4;
+  padding: 1rem 2rem;
+}
+@media (max-width: 600px) and (max-width: 600px) {
+  .widget-section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 2rem 2rem;
+    order: 4;
+  }
+}
+
+/*
+    REVIEWS 
+------------------------------*/
+.reviews {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.review__list {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0;
+}
+
+.commentator {
+  position: relative;
+  border-bottom: solid 1px rgba(128, 128, 128, 0.7);
+  background-color: #feda6a;
+  padding: 1rem 0;
+  margin: 5rem 0;
+}
+
+.commentator:first-of-type {
+  margin-top: 2.5rem;
+}
+
+.commentator-avatar {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -40%;
+  left: 10%;
+}
+
+.commentator-avatar__source {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textcomment {
+  text-align: right;
+  padding: 0 1rem;
+}
+
+.textcomment__name {
+  font-size: 2rem;
+  color: #444751;
+  font-weight: bold;
+  margin: 0.2em;
+}
+
+.textcomment__text {
+  font-size: 1.5rem;
+  color: #444751;
+  font-weight: normal;
+  margin: 0.2em;
+}
+
+/*-----------------
+    facebook plugin
+------------------------------------*/
+.facebook {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+/*---------------------------------------------------
+    weather section
+----------------------------------------------------*/
+.weather-section {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  order: 5;
+}
+@media (max-width: 600px) and (max-width: 600px) {
+  .weather-section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 2rem 2rem;
+  }
+}
+
+/*---------------------------------------------------
+    GALLERY PAGE
+----------------------------------------------------*/
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.galleryimage-wrap {
+  max-width: 100%;
+  height: 100%;
+}
+
+.galleryimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*---------------------------------------------------
+CONTACT FORM INPUT
+----------------------------------------------------*/
+.contact-form-section {
+  padding: 4rem 3rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.form__label {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.form__input-style, .form-submit-btn {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border-width: 1px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.default-button-style {
+  border-width: 1px;
+  border-color: slategray;
+  padding: 0.5rem;
+  background-color: #2f3542;
+  text-align: center;
+}
+
+.form__comment {
+  /* same as input fields default styling */
+  border-style: inset;
+  border-color: initial;
+}
+
+/* ALL MARGINS
+------------------------------------*/
+
+/*# sourceMappingURL=style.css.map */
