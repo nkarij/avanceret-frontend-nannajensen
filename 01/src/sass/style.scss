@@ -25,8 +25,9 @@ figure {
 }
 
 .pagewrap {
-    width: 75vw;
+    width: 70vw;
     margin: auto;
+    box-shadow: 0px 0px 2px 1px rgba(68,71,81,0.46);
     @mixin mediaQuery($maxwidth) {
         @media (max-width: $maxwidth) {
             width: 100vw;
@@ -133,6 +134,20 @@ LOGO-SECTION
 
 
 /*---------------------------------------------------
+    SECTION LINES
+----------------------------------------------------*/
+
+.menus-section--lines, .weather-section--lines {
+    border-right: dotted 1px grey;
+}
+
+.reviews--lines, .facebook--lines {
+        border-left: dotted 1px grey;
+}
+
+
+
+/*---------------------------------------------------
 MAIN NAVIGATION
 ----------------------------------------------------*/
 
@@ -201,7 +216,7 @@ MAIN NAVIGATION
 }
 
 .menupunkt:first-of-type {
-    padding: 0;
+    padding-top: 0;
 }
 
 .menupunkt:hover {
