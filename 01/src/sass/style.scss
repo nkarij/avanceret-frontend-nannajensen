@@ -18,11 +18,21 @@ body {
     width: 100%;
 }
 
+
 figure {
     margin: 0;
     padding: 0;    
 }
 
+.pagewrap {
+    width: 75vw;
+    margin: auto;
+    @mixin mediaQuery($maxwidth) {
+        @media (max-width: $maxwidth) {
+            width: 100vw;
+        }
+    }
+}
 
 
 /* -------------------------------------------------

@@ -63,6 +63,11 @@ figure {
   padding: 0;
 }
 
+.pagewrap {
+  width: 75vw;
+  margin: auto;
+}
+
 /* -------------------------------------------------
     FRONTPAGE
 ----------------------------------------------------*/
@@ -75,7 +80,7 @@ figure {
     HEADER
 ----------------------------------------------------*/
 .header {
-  background-color: #2f3542;
+  background-color: #1f232c;
   position: relative;
   padding: 8px;
   justify-self: center;
@@ -116,7 +121,7 @@ LOGO-SECTION
 .logo-section {
   display: flex;
   justify-content: flex-start;
-  background-color: #2f3542;
+  background-color: #1f232c;
   height: auto;
   width: 100%;
   padding: 1rem 5rem;
@@ -223,7 +228,7 @@ MAIN NAVIGATION
 }
 
 .menupunkt:hover {
-  background-color: #2f3542;
+  background-color: #1f232c;
 }
 
 .menupunkt__link {
@@ -240,7 +245,7 @@ MAIN NAVIGATION
 .menupunkt__link:hover {
   text-decoration-line: none;
   font-weight: bold;
-  background-color: #2f3542;
+  background-color: #1f232c;
   color: #feda6a;
 }
 
@@ -421,13 +426,13 @@ MAIN NAVIGATION
 
 .forecast__temperatur {
   font-size: 2rem;
-  color: #2f3542;
+  color: #1f232c;
   font-weight: bold;
 }
 
 forecast__grader {
   font-size: 2rem;
-  color: #2f3542;
+  color: #1f232c;
   font-weight: normal;
 }
 
@@ -499,7 +504,7 @@ CONTACT FORM INPUT
   border-width: 1px;
   border-color: slategray;
   padding: 0.5rem;
-  background-color: #2f3542;
+  background-color: #1f232c;
   text-align: center;
 }
 @media (max-width: 850px) and (max-width: 850px) {
@@ -521,7 +526,7 @@ CONTACT FORM INPUT
 .footer {
   display: flex;
   justify-content: space-evenly;
-  background-color: #2f3542;
+  background-color: #1f232c;
   padding: 6rem 2rem;
 }
 @media (max-width: 600px) and (max-width: 600px) {
@@ -624,7 +629,7 @@ CONTACT FORM INPUT
   padding: 1.5rem;
   border-width: 0;
   background-color: #feda6a;
-  color: #2f3542;
+  color: #1f232c;
   border: #6a8efe;
   font-size: 1rem;
 }
@@ -634,14 +639,14 @@ CONTACT FORM INPUT
   width: 100%;
   height: 5vh;
   font-size: 2rem;
-  color: #2f3542;
+  color: #1f232c;
   font-weight: normal;
   text-align: center;
 }
 
 .small__link {
   text-decoration: none;
-  color: #2f3542;
+  color: #1f232c;
 }
 
 .small__link:hover {
