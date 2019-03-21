@@ -18,9 +18,9 @@ fetch(apiDatabaseURL + weatherLocation + apiKeyId)
     return response.json();
 })
 .then((weather)=>{
-
+    console.log(weather);
     let currentWeather = weather.weather[0].main;
-    // console.log(weather);
+    // console.log(currentWeather);
     getWeatherInfo(currentWeather);
     matchWeatherAndImage();
 
