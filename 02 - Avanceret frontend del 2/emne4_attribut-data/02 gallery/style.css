@@ -1,0 +1,8 @@
+
+#image-data {
+    display: none;
+}
+
+.current-image-styling {
+    border: solid 5px orangered;
+}
