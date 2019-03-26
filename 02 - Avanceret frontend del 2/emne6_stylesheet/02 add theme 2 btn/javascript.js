@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     // alert("blabla");
 
+    // IFHT VERSION 01 ER AT HER SAT ET EKSTRA LINK-TAG IND I HTML
+    // DERFOR KAN DEFAULT.CSS IMPORTERES I THEMA = FÅ CSS ÆNDRINGER.
+
     let buttonReplaceTheme = document.querySelector(".replace-theme");
     let buttonRemoveTheme = document.querySelector(".remove-theme");
     let cssThemeElement = document.querySelector("#css-theme");
@@ -20,13 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // version 3 - med buttons
     buttonReplaceTheme.addEventListener('click', () => {
         // console.log("element trykket");
-        defaultStyleSheetElement.href = "";
         cssThemeElement.href = "css/style2.css";
     });
 
     buttonRemoveTheme.addEventListener('click', () => {
         cssThemeElement.href = "";
-        defaultStyleSheetElement.href = "css/default.css";
     });
 
 });

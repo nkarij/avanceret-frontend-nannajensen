@@ -1,0 +1,9 @@
+@import url("default.css");
+
+.test-1 {
+    border: none;
+}
+
+.test-2 {
+    border: solid 5px red;
+}
