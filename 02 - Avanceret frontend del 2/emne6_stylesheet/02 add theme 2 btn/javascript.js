@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     // alert("blabla");
 
-    // IFHT VERSION 01 ER AT HER SAT ET EKSTRA LINK-TAG IND I HTML
-    // DERFOR KAN DEFAULT.CSS IMPORTERES I THEMA = FÅ CSS ÆNDRINGER.
+    // SKIFT TEMA VHA BUTTONS, MEN BEHOLD DEFAULT.CSS SOM BASE
+    // HER ER SAT ET EKSTRA LINK-TAG IND I HTML
+    // DERFOR KAN DEFAULT.CSS IMPORTERES I TEMA = FÅ CSS ÆNDRINGER I TEMA.
 
     let buttonReplaceTheme = document.querySelector(".replace-theme");
     let buttonRemoveTheme = document.querySelector(".remove-theme");
