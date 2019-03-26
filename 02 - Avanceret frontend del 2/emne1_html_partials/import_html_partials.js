@@ -9,12 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .then((partial)=>{
         // console.log(partial);
+        // henter nav-tag og indsætter partial før end-tag
         document.querySelector("nav").insertAdjacentHTML('beforeend', partial);
 
         // der kan først clones når den første partial er skrevet til HTML-dokumentet.
-        // let partialMenuElement = document.querySelector(".partial_menu")
+        // let partialMenuElement = document.querySelector(".partial_menu");
+        // opret variabel til at gemme dublikeret Html (fra partialMenuElement)
         // let duplicatedNode = partialMenuElement.cloneNode(true);
         // // console.log(duplicatedNode);
+        // her attaches den duplikerede html i SOME-Menu
         // let someNavElement = document.querySelector(".some-nav");
         // someNavElement.appendChild(duplicatedNode);
 
