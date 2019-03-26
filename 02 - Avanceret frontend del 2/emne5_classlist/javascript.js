@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             imageIndex = 0;
         }
         currentImage.src = imageDataArray[imageIndex];
+        currentImage.classList.add("current-image-styling");
     });
 
     // console.log(imageDataArray[imageIndex]);
@@ -38,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         imageIndex--;
         // console.log(imageIndex);
         currentImage.src = imageDataArray[imageIndex];
+        currentImage.classList.remove("current-image-styling");
     });
-   
 
 }); 
