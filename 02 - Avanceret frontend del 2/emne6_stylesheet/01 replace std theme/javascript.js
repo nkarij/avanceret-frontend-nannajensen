@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // alert("blabla");
-
-    // REPLACE DEFAULT THEME    
+    // OPGAVE: skifte css-tema & tilføje css-stylsheet dynamisk.
     // her anvendes kun 1 link-tag i head. 
     // Dvs. at link-taggets href skal erstattes med ny css-fil-sti
+
+document.addEventListener('DOMContentLoaded', () => {
+    // alert("blabla");
 
     let buttonReplaceTheme = document.querySelector(".replace-theme");
     let buttonRemoveTheme = document.querySelector(".remove-theme");

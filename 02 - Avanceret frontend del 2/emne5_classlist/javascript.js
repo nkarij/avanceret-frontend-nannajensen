@@ -1,3 +1,6 @@
+// OPGAVE: brug classlist til at style billeder i slider
+
+
 document.addEventListener('DOMContentLoaded', () => {
     // alert("blabla");
 

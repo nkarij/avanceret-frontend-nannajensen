@@ -1,16 +1,17 @@
+// OPGAVE: skifte css-tema & tilføje css-stylsheet dynamisk.
+    // TOGGLE/SKIFT TEMA VHA 1 BUTTON, DERFOR BRUG CONDITIONAL
+    // STADIG 2 LINK TAGS
+    // IF-SÆTNING AFGØR HVILKET TEMA CLICK-EVENTET UDFØRER
+    // NB. man kan ikke tjekke om et href er tomt, det er det aldrig.
+
 document.addEventListener('DOMContentLoaded', () => {
     // alert("blabla");
-
-    // SKIFT TEMA VHA 1 BUTTON, BRUG CONDITIONAL
-    // STADIG 2 LINK TAGS
-    // IF-SÆTNING BESTEMMER HVILKET TEMA BUTTON.CLICK UDFØRER
 
     let buttonToggleTheme = document.querySelector(".toggle-theme");
     // let buttonRemoveTheme = document.querySelector(".remove-theme");
     let cssThemeElement = document.querySelector("#css-theme");
     // console.log(cssThemeElement.href);
     // console.log(typeof(cssThemeElement.href));
-    // let defaultStyleSheetElement = document.querySelector("head link");
     // console.log(styleSheetElement);
 
     // version 3 - med buttons
@@ -23,7 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
             cssThemeElement.dataset.state = "on";
             cssThemeElement.href = "css/style2.css";
             // console.log(cssThemeElement.dataset.state);
-        } else if(cssThemeElement.dataset.state == "on") {
+        }else  
+        // if(cssThemeElement.dataset.state == "on") 
+        {
             cssThemeElement.dataset.state = "off";
             cssThemeElement.href = "";
             // console.log(cssThemeElement.dataset.state);

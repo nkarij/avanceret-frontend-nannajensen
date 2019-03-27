@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // øvesle: queryselect i parentelement.
+    // OPGAVE: queryselect i parentElement.
+    // Det er især smart når der skal laves query i arrayItems
+    // eller på et specifikt element med event.click
         
     let parentElementsArray = document.querySelectorAll(".item");
 

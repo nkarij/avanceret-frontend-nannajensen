@@ -1,15 +1,15 @@
+// OPGAVE: skifte css-tema & tilføje css-stylsheet dynamisk.
+// SKIFT TEMA VHA BUTTONS, MEN BEHOLD DEFAULT.CSS SOM BASE
+// HER ER SAT ET EKSTRA LINK-TAG IND I HTML
+// DERFOR KAN DEFAULT.CSS IMPORTERES I TEMA = FÅ CSS ÆNDRINGER I TEMA.
+
 document.addEventListener('DOMContentLoaded', () => {
     // alert("blabla");
 
-    // SKIFT TEMA VHA BUTTONS, MEN BEHOLD DEFAULT.CSS SOM BASE
-    // HER ER SAT ET EKSTRA LINK-TAG IND I HTML
-    // DERFOR KAN DEFAULT.CSS IMPORTERES I TEMA = FÅ CSS ÆNDRINGER I TEMA.
-
+    // gem referencer til html-tags
     let buttonReplaceTheme = document.querySelector(".replace-theme");
     let buttonRemoveTheme = document.querySelector(".remove-theme");
     let cssThemeElement = document.querySelector("#css-theme");
-    let defaultStyleSheetElement = document.querySelector("head link");
-    // console.log(styleSheetElement);
 
     // version 1a + b - set attribute...
     // styleSheetElement.href = "style2.css";

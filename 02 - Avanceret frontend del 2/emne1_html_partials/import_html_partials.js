@@ -1,5 +1,12 @@
+// OPGAVE: Importer HTML-partial med JS
+// og indsætte det i HTML-doc.
+// Partials er små blokke af HTML, som skal genbruges på andre undersider
+// og derefter er det nemt at rette i HTMLen, så der opdateres globalt.
+// nemt for en designer at de ikke skal rette i JS, men i html.
+
 document.addEventListener('DOMContentLoaded', () => {
     // alert("test");
+
 
     fetch("partials/partial_1.html")
     // mellem-then() skal altid skrives på denne/samme måde

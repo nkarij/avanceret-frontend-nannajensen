@@ -1,4 +1,9 @@
+// OPGAVE: dupliker html-template-blok til nyt tomt elementer (evt flere), 
+// det er smart med fx cards eller galleri-cards.
+// så kan man derefter tilgå properties i det nye element, 
+// uden at det ændrer ved templaten, som evt. kan bruges andre steder.
 
+// "database" - til at indsætte i html
 let dataProducts = [
     {
         title: "asse",
@@ -12,9 +17,9 @@ let dataProducts = [
 
 console.log(dataProducts);
 
-// gem det product som skal duplikeres
+// gem den template-blok som skal duplikeres
 let productTemplateElement = document.querySelector("#html-templates .product");
-// gem hardcoded parentelement
+// gem det parentelement, som templates skal indsættes i
 let allProductsElement = document.querySelector(".products");
 
 // loop data
